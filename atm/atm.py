@@ -2,18 +2,16 @@ import math
 
 def checkio(input):
 	balance = input[0]
-	withdraw = input[1].pop(0)
-
-	if withdraw % 5 != 0:
-		return balance if len(input[1]) is 0 else checkio([ balance, input[1] ])
-
-	balanceWithdraw = withdraw + (0.5 + (withdraw * 0.01))
-
-	if balanceWithdraw <= balance:
-		balance = math.floor(balance - balanceWithdraw)
-
 	if len(input[1]) is 0:
 		return balance
+
+	withdraw = input[1].pop(0)
+	if withdraw % 5 != 0:
+		return checkio([ balance, input[1] ])
+
+	balanceWithdraw = withdraw + (0.5 + (withdraw * 0.01))
+	if balanceWithdraw <= balance:
+		balance = math.floor(balance - balanceWithdraw)
 
 	return checkio([ balance, input[1] ])
 
