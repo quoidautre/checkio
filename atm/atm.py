@@ -1,27 +1,21 @@
 import math
 
-def calculateCommision(asdf):
-	return 0.5 + (amountToWithdraw * 0.01)
-
-def atm(balance, withdraws):
-	withdraw = withdraws.pop(0)
-
-	if withdraw % 5 not 0:
-		return atm(balance, withdraws)
-
-	commision = math.ceil(0.5 +(withdraw * 0.01))
-
-	if commision <= balance:
-		balance += commision
-
-	return balance if len(withdraws) == 0 else atm(balance, withdraws)
-
 def checkio(input):
 	balance = input[0]
-	withdraws = input[1]
+	withdraw = input[1].pop(0)
 
-	return atm(balance, withdraws)
+	if withdraw % 5 != 0:
+		return balance if len(input[1]) is 0 else checkio([ balance, input[1] ])
 
+	balanceWithdraw = withdraw + (0.5 + (withdraw * 0.01))
+
+	if balanceWithdraw <= balance:
+		balance = math.floor(balance - balanceWithdraw)
+
+	if len(input[1]) is 0:
+		return balance
+
+	return checkio([ balance, input[1] ])
 
 if __name__ == '__main__':
 	assert(checkio([120, [10, 20, 30]]) == 57)
