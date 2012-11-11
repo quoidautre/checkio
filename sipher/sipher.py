@@ -29,7 +29,15 @@ def rotate(map):
 	return result
 
 def checkio(data):
-	return ''
+	result = ''
+	map = data[0]
+	sipher = data[1]
+
+	for n in range(0, 4):
+		result += decode(map, sipher)
+		map = rotate(map)
+
+	return result
 
 if __name__ == '__main__':
 	assert checkio([[
