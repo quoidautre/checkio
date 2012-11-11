@@ -1,3 +1,32 @@
+def decode(map, sipher):
+	result = ''
+	rowpos = 0
+	for row in map:
+		linepos = 0
+		for letter in row:
+			if letter == 'X':
+				result += sipher[rowpos][linepos]
+			linepos += 1
+		rowpos += 1
+
+	return result
+
+def rotate(map):
+	result = []
+
+	linepos = 0
+	for row in map:
+		rowpos = 3
+
+		newRow = ''
+		for letter in row:
+			newRow += map[rowpos][linepos]
+			rowpos -= 1
+
+		result.append(newRow)
+		linepos += 1
+
+	return result
 
 def checkio(data):
 	return ''
