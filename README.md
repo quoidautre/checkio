@@ -11,3 +11,4 @@ tasks
  * spaceship __DONE__
  * speechmodule __DONE__
  * batteries
+ * cipher map
