@@ -1,6 +1,12 @@
-def checkio():
-    pass
+def checkio(arr):
+    result = []
+    for x in arr:
+        if type(x) is list:
+            result.extend(checkio(x))
+        else:
+            result.append(x)
 
+    return result
 
 if __name__ == '__main__':
     assert checkio([1, 2, 3]) == [1, 2, 3]
