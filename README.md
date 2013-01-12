@@ -19,4 +19,5 @@ tasks
  * polish notation
  * roman numerals __Done__
  * factoral numbers __Done__
- * musical module
+ * musical module __Done__
+ * matrix transposed
