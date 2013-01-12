@@ -1,6 +1,6 @@
 def checkio(password):
 	if (len(password) < 10):
-			return False
+		return False
 
 	requirement = [
 		lambda x: x.isupper(),
