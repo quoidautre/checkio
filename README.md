@@ -17,3 +17,5 @@ tasks
  * dot in numbers __Done__
  * subset summing __Done__
  * polish notation
+ * roman numerals __Done__
+ * factoral numbers __Done__
