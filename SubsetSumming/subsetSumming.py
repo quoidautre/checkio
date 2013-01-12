@@ -2,27 +2,18 @@ import itertools
 
 
 def G(set):
-    res = []
+    result = []
     for n in set:
-        i = itertools.combinations(set, n)
-        for tuppp in i:
-            line = []
-            l = []
-            for x in tuppp:
-                l.append(str(x))
-                line.append(x)
-            print ",".join(l)
-            res.append(sum(line))
+        for x in itertools.combinations(set, n):
+            result.append(sum(x))
 
-    print sum(res)
-    return sum(res)
+    return sum(result)
 
 
 def checkio(num):
     result = 0
-    for n in range(1, num + 1):
-        print 'n: ' + str(n)
-        result += G(range(1, n + 1))
+    for n in xrange(1, num + 1):
+        result += G(xrange(1, n + 1))
 
     return result
 
