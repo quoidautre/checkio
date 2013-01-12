@@ -15,4 +15,5 @@ tasks
  * all in row __Done__
  * remove extra space __Done__
  * dot in numbers __Done__
- * subset summing
+ * subset summing __Done__
+ * polish notation
