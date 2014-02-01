@@ -2,10 +2,7 @@ def checkio(input):
 	grouped = {}
 
 	for x in input:
-		grouped[x] = 0
-
-	for x in input:
-		grouped[x] += 1
+		grouped[x] = input.count(x)
 
 	return filter(lambda x: grouped[x] > 1, input)
 
