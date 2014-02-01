@@ -21,3 +21,5 @@ tasks
  * factoral numbers __Done__
  * musical module __Done__
  * matrix transposed
+ * median __Done__
+ * non uniqe collection __Done__
