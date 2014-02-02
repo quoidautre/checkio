@@ -23,3 +23,5 @@ tasks
  * matrix transposed
  * median __Done__
  * non uniqe collection __Done__
+ * prime palindrome __Done__
+ * fix the generator
