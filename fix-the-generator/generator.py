@@ -1,5 +1,7 @@
 def checkio(input):
-	pass
+	settings = []
+
+	for i in xrange(len(input) -1):
 
 if __name__ == '__main__':
 	assert(checkio([4, 2, 10]) == 1)
