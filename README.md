@@ -25,3 +25,12 @@ tasks
  * non uniqe collection __Done__
  * prime palindrome __Done__
  * fix the generator
+ * fizzbuzz
+ * the_end_of_other
+ * the_most_numbers
+ * even-the-last
+ * three_words
+ * number_base
+ * binary_count
+ * the_absolute_sorting
+ * the_common_words
