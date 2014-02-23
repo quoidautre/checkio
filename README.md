@@ -25,7 +25,7 @@ tasks
  * non uniqe collection __Done__
  * prime palindrome __Done__
  * fix the generator
- * fizzbuzz
+ * fizzbuzz __Done__
  * the_end_of_other
  * the_most_numbers
  * even-the-last
