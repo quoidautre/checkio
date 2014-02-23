@@ -14,11 +14,6 @@ Output: The difference between maximum and minimum.
 
 Example:
 
-?
-1
-2
-3
-4
 checkio(1, 2, 3) == 2
 checkio(5, -5) == 10
 checkio(10.2, -2.2, 0, 1.1, 0.5) == 12.4
